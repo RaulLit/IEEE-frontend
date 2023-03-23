@@ -1,13 +1,105 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+:root {
+  --bs-dark-blue: #000516;
+  --bs-lighter-dark-blue: #001045;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: var(--bs-dark-blue);
+}
+
+nav {
+  background-color: var(--bs-dark-blue);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+  height: 5rem;
+  align-items: center;
+}
+/* NAV STYLES */
+nav .nav-list {
+  list-style: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-item {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* FOOTER STYLES */
+.footer-container {
+  background: #000516;
+  color: white;
+}
+.foot-row {
+  margin: 2rem 0;
+}
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.foot-col h3 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.foot-col ul {
+  list-style: none;
+  padding: 0;
+}
+.foot-col li {
+  margin: 1rem 0;
+}
+.foot-col a {
+  text-decoration: none;
+  color: white;
+}
+.foot-logo {
+  margin-bottom: 1rem;
+}
+.foot-col h2 {
+  margin-bottom: 1rem;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
