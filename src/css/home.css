@@ -6,20 +6,21 @@
 }
 
 .landing-section {
-    height: 80vh;
+    height: 90vh;
     /* background: linear-gradient(to bottom, hsl(180, 100%, 40%), hsl(180, 100%, 5%)); */
     background: url('../assets/techo-bg.jpg') center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .section {
     margin: 5rem auto;
     width: 85%;
     height: 70vh;
-    background: var(--bs-lighter-dark-blue);
+    /* background: var(--bs-lighter-dark-blue); */
     display: flex;
     justify-content: space-between;
     border-radius: 1rem;
@@ -31,13 +32,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 1rem;
 }
 .section .text {
     width: 50%;
     padding: 5rem 2rem;
     font-family: 'Comfortaa', cursive;
     color: white;
+}
+.text p {
+    margin: 2rem;
 }
 .section1 {
     display: block;
@@ -67,6 +71,24 @@
     margin-top: 2rem;
     font-size: 1.2rem;
     line-height: 1.6rem;
+}
+
+.section2 button {
+    width: 12rem;
+    height: 4rem;
+    background: var(--bs-dark-blue);
+    border: 1px solid white;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.section2 button:hover {
+    background: white;
+    color: var(--bs-dark-blue);
 }
 
 .section2 .img {

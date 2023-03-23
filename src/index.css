@@ -42,7 +42,12 @@ nav {
   justify-content: space-between;
   padding: 1rem 8rem;
   height: 5rem;
+  width: 100%;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: top 0.3s;
 }
 /* NAV STYLES */
 nav .nav-list {
@@ -102,4 +107,9 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+hr {
+  width: 90vw;
+  margin: 0 auto;
 }
